@@ -1,6 +1,6 @@
 {
   "request": {
-    "url": "/api/bulk/2.0/contacts/imports",
+    "url": "/api/bulk/2.0/contacts/imports/bk",
     "method": "POST",
     "basicAuthCredentials": {
       "username": "TD\\username",

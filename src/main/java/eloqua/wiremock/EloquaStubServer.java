@@ -18,7 +18,6 @@ import java.net.InetAddress;
 public class EloquaStubServer
 {
     private static final Logger LOG = LoggerFactory.getLogger(EloquaStubServer.class);
-    private static final int STUB_PORT = 5000;
     private static final int MAX_ALLOW_REQUEST_SIZE = 23_000_000;
     private static final int MAX_ALLOW_STAGING_SIZE = 250_000_000;
     private final WireMockServer wm;
@@ -27,7 +26,7 @@ public class EloquaStubServer
     public EloquaStubServer()
     {
         wm = new WireMockServer(WireMockConfiguration.options()
-                                                     .port(5000)
+                                                     .port(Integer.parseInt(System.getenv("PORT")))
                                                      .usingFilesUnderClasspath("wiremock"));
         wm.stubFor(WireMock.requestMatching(bodyTooLarge())
                            .willReturn(WireMock.aResponse()
@@ -88,10 +87,10 @@ public class EloquaStubServer
                              + "Local: \t\thttp://localhost:{}\n\t"
                              + "External: \thttp://{}:{}\n\t"
                              + "\n----------------------------------------------------------",
-                     STUB_PORT,
+                     Integer.parseInt(System.getenv("PORT")),
                      InetAddress.getLocalHost()
                                 .getHostAddress(),
-                     STUB_PORT);
+                     Integer.parseInt(System.getenv("PORT")));
         }
         catch (Exception e) {
             e.printStackTrace();

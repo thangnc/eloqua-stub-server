@@ -1,1 +1,1 @@
-web: build\install\eloqua-stub-server\bin\eloqua-stub-server.bat
+web: build\install\eloqua-stub-server\bin\eloqua-stub-server.bat -p $PORT

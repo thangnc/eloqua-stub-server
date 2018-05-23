@@ -1,0 +1,6 @@
+{
+  "name": "Eloqua Stub Server on Heroku",
+  "description": "A stub server for Eloqua plugin.",
+  "image": "heroku/gradle",
+  "addons": []
+}

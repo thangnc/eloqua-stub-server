@@ -1,0 +1,29 @@
+{
+  "request": {
+    "url": "/api/bulk/2.0/contacts/imports",
+    "method": "POST",
+    "basicAuthCredentials": {
+      "username": "TD\\username",
+      "password": "password"
+    }
+  },
+  "response": {
+    "status": 200,
+    "jsonBody": {
+      "name": "Docs Import Example",
+      "fields": {
+        "c_firstname": "{{Contact.Field(C_FirstName)}}",
+        "c_lastname": "{{Contact.Field(C_LastName)}}",
+        "c_emailaddress": "{{Contact.Field(C_EmailAddress)}}"
+      },
+      "identifierFieldName": "c_emailaddress",
+      "isSyncTriggeredOnImport": false,
+      "isUpdatingMultipleMatchedRecords": false,
+      "uri": "/contacts/imports/1182",
+      "createdBy": "Docs.Example",
+      "createdAt": "2014-05-13T14:13:30.0402961Z",
+      "updatedBy": "Docs.Example",
+      "updatedAt": "2014-05-13T14:13:30.0402961Z"
+    }
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "request": {
+    "url": "/api/bulk/2.0/contacts/imports/1182/data",
+    "method": "POST",
+    "basicAuthCredentials": {
+      "username": "TD\\username",
+      "password": "password"
+    }
+  },
+  "response": {
+    "status": 204,
+    "body": ""
+  }
+}

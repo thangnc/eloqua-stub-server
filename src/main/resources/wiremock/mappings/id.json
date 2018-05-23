@@ -1,0 +1,45 @@
+{
+  "request": {
+    "url": "/id",
+    "method": "GET",
+    "basicAuthCredentials": {
+      "username": "TD\\username",
+      "password": "password"
+    }
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "jsonBody": {
+      "site": {
+        "id": 42,
+        "name": "MyTestInstall"
+      },
+      "user": {
+        "id": 314,
+        "username": "jane.smith",
+        "displayName": "Jane Smith",
+        "firstName": "Jane",
+        "lastName": "Smith",
+        "emailAddress": "jane.smith@eloqua.com"
+      },
+      "urls": {
+        "base": "https://www05.secure.eloqua.com",
+        "apis": {
+          "soap": {
+            "standard": "https://www05.secure.eloqua.com/API/{version}/Service.svc",
+            "dataTransfer": "https://www05.secure.eloqua.com/API/{version}/DataTransferService.svc",
+            "email": "https://www05.secure.eloqua.com/API/{version}/EmailService.svc",
+            "externalAction": "https://www05.secure.eloqua.com/API/{version}/ExternalActionService.svc"
+          },
+          "rest": {
+            "standard": "https://www05.secure.eloqua.com/API/REST/{version}/",
+            "bulk": "http://localhost:8080/API/Bulk/{version}/"
+          }
+        }
+      }
+    }
+  }
+}

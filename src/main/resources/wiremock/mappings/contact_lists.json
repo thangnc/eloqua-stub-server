@@ -1,0 +1,45 @@
+{
+  "request": {
+    "url": "/api/bulk/2.0/contacts/lists",
+    "method": "GET",
+    "basicAuthCredentials": {
+      "username": "TD\\username",
+      "password": "password"
+    }
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "jsonBody": {
+      "items": [
+        {
+          "name": "IP Warming - Contacts Bounced Back",
+          "count": 0,
+          "statement": "{{ContactList[54]}}",
+          "uri": "/contacts/lists/54",
+          "createdBy": "Deploy.User",
+          "createdAt": "2011-05-27T15:30:17.4000000Z",
+          "updatedBy": "Deploy.User",
+          "updatedAt": "2011-05-27T15:30:17.4000000Z"
+        },
+        {
+          "name": "SYSTEM - CRM Converted Leads",
+          "count": 0,
+          "statement": "{{ContactList[50]}}",
+          "uri": "/contacts/lists/50",
+          "createdBy": "Deploy.User",
+          "createdAt": "2011-05-27T15:14:34.8030000Z",
+          "updatedBy": "Deploy.User",
+          "updatedAt": "2011-05-27T15:14:34.8030000Z"
+        }
+      ],
+      "totalResults": 27,
+      "limit": 2,
+      "offset": 10,
+      "count": 2,
+      "hasMore": true
+    }
+  }
+}

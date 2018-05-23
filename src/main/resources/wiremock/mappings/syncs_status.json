@@ -1,0 +1,24 @@
+{
+  "request": {
+    "url": "/api/bulk/2.0/syncs/1208",
+    "method": "POST",
+    "basicAuthCredentials": {
+      "username": "TD\\username",
+      "password": "password"
+    }
+  },
+  "response": {
+    "status": 204,
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "jsonBody": {
+      "syncedInstanceUri": "/contacts/imports/1182",
+      "syncStartedAt": "2014-05-13T17:58:34.2770000Z",
+      "status": "success",
+      "createdAt": "2014-05-13T17:58:33.8130000Z",
+      "createdBy": "Docs.Example",
+      "uri": "/syncs/1208"
+    }
+  }
+}

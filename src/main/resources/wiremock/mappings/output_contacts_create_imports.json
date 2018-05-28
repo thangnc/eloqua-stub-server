@@ -5,12 +5,7 @@
     "basicAuthCredentials": {
       "username": "TD\\username",
       "password": "password"
-    },
-    "bodyPattern": [
-      {
-        "equalToJson": {}
-      }
-    ]
+    }
   },
   "response": {
     "status": 200,

@@ -29,14 +29,14 @@
         "base": "https://eloqua-stub-server.herokuapp.com",
         "apis": {
           "soap": {
-            "standard": "https://eloqua-stub-server.herokuapp.com/API/{version}/Service.svc",
-            "dataTransfer": "https://eloqua-stub-server.herokuapp.com/API/{version}/DataTransferService.svc",
-            "email": "https://eloqua-stub-server.herokuapp.com/API/{version}/EmailService.svc",
-            "externalAction": "https://eloqua-stub-server.herokuapp.com/API/{version}/ExternalActionService.svc"
+            "standard": "https://eloqua-stub-server.herokuapp.com/api/{version}/Service.svc",
+            "dataTransfer": "https://eloqua-stub-server.herokuapp.com/api/{version}/DataTransferService.svc",
+            "email": "https://eloqua-stub-server.herokuapp.com/api/{version}/EmailService.svc",
+            "externalAction": "https://eloqua-stub-server.herokuapp.com/api/{version}/ExternalActionService.svc"
           },
           "rest": {
-            "standard": "https://eloqua-stub-server.herokuapp.com/API/REST/{version}/",
-            "bulk": "https://eloqua-stub-server.herokuapp.com/API/Bulk/{version}/"
+            "standard": "https://eloqua-stub-server.herokuapp.com/api/rest/{version}/",
+            "bulk": "https://eloqua-stub-server.herokuapp.com/api/bulk/{version}/"
           }
         }
       }

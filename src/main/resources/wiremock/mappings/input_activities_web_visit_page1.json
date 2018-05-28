@@ -1,0 +1,53 @@
+{
+  "request": {
+    "url": "/api/bulk/2.0/syncs/52557/data?limit=2&offset=0",
+    "method": "GET",
+    "basicAuthCredentials": {
+      "username": "TD\\username",
+      "password": "password"
+    }
+  },
+  "response": {
+    "status": 200,
+    "jsonBody": {
+      "Count": 2,
+      "hasMore": true,
+      "limit": 2,
+      "offset": 0,
+      "totalResults": 3,
+      "items": [
+        {
+          "activity_id": "997",
+          "activity_type": "WebVisit",
+          "activity_date": "2018-05-07T01:00:00Z",
+          "contact_id": "123",
+          "visitor_id": "1",
+          "visitor_external_id": "8c25d41f-6142-4215-8134-4cd311fe2b08",
+          "referrer_url": "http://referrer.url",
+          "ip_address": "172.0.0.0",
+          "number_of_pages": "10",
+          "first_page_view_url": "http://first.page.view.url",
+          "duration": "P7D",
+          "external_id": "1"
+        },
+        {
+          "activity_id": "998",
+          "activity_type": "WebVisit",
+          "activity_date": "2018-05-07T02:00:00Z",
+          "contact_id": "123",
+          "visitor_id": "2",
+          "visitor_external_id": "8c25d41f-6142-4215-8134-4cd311fe2b08",
+          "referrer_url": "http://referrer.url",
+          "ip_address": "172.0.0.0",
+          "number_of_pages": "10",
+          "first_page_view_url": "http://first.page.view.url",
+          "duration": "P7D",
+          "external_id": "2"
+        }
+      ]
+    },
+    "headers": {
+      "Content-Type": "application/json"
+    }
+  }
+}

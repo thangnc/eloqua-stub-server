@@ -1,0 +1,46 @@
+{
+  "request": {
+    "url": "/api/bulk/2.0/syncs/52553/data?limit=2&offset=2",
+    "method": "GET",
+    "basicAuthCredentials": {
+      "username": "TD\\username",
+      "password": "password"
+    }
+  },
+  "response": {
+    "status": 200,
+    "jsonBody": {
+      "Count": 1,
+      "hasMore": false,
+      "limit": 2,
+      "offset": 2,
+      "totalResults": 3,
+      "items": [
+        {
+          "activity_id": "999",
+          "activity_type": "EmailClickthrough",
+          "activity_date": "2018-05-07T03:00:00Z",
+          "email_address": "allison@example.com",
+          "contact_id": "123",
+          "visitor_id": "3",
+          "ip_address": "172.0.0.0",
+          "email_recipient_id": "75139c0a-ae4d-4f7e-8c5d-46f2f2d6e4f5",
+          "asset_type": "Email",
+          "asset_name": "EmailClickthrough-BulkActivity",
+          "asset_id": "3",
+          "subject_line": "Hi, Hello, Hola",
+          "email_web_link": "http://email.web.link",
+          "email_clicked_thru_link": "http://email.clicked.thru.link",
+          "visitor_external_id": "8c25d41f-6142-4215-8134-4cd311fe2b08",
+          "campaign_id": "3",
+          "external_id": "3",
+          "deployment_id": "123",
+          "email_send_type": "forward"
+        }
+      ]
+    },
+    "headers": {
+      "Content-Type": "application/json"
+    }
+  }
+}

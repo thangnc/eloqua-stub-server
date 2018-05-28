@@ -1,0 +1,38 @@
+{
+  "request": {
+    "url": "/api/bulk/2.0/syncs/52524/data?limit=2&offset=2",
+    "method": "GET",
+    "basicAuthCredentials": {
+      "username": "TD\\username",
+      "password": "password"
+    }
+  },
+  "response": {
+    "status": 200,
+    "jsonBody": {
+      "Count": 1,
+      "hasMore": false,
+      "limit": 2,
+      "offset": 2,
+      "totalResults": 3,
+      "items": [
+        {
+          "c_email_address": "shawn.sansom@gmail.com",
+          "c_first_name": "Shawn",
+          "c_last_name": "Sansom",
+          "c_company": "Google",
+          "c_email_display_name": "Shawn Sansom",
+          "c_address1": "150 Main St.",
+          "c_address2": "National City",
+          "c_address3": "CA 91950",
+          "c_city": "National",
+          "c_state_prov": "California",
+          "c_date_modified": "2018-05-01T07:00:00Z"
+        }
+      ]
+    },
+    "headers": {
+      "Content-Type": "application/json"
+    }
+  }
+}

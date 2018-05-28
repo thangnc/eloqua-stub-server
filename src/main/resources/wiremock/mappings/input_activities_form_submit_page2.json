@@ -1,0 +1,40 @@
+{
+  "request": {
+    "url": "/api/bulk/2.0/syncs/52522/data?limit=2&offset=2",
+    "method": "GET",
+    "basicAuthCredentials": {
+      "username": "TD\\username",
+      "password": "password"
+    }
+  },
+  "response": {
+    "status": 200,
+    "jsonBody": {
+      "Count": 1,
+      "hasMore": false,
+      "limit": 2,
+      "offset": 2,
+      "totalResults": 3,
+      "items": [
+        {
+          "activity_id": "999",
+          "activity_type": "FormSubmit",
+          "activity_date": "2018-05-07T03:00:00Z",
+          "email_address": "allison@example.com",
+          "contact_id": "123",
+          "visitor_id": "1",
+          "visitor_external_id": "8c25d41f-6142-4215-8134-4cd311fe2b08",
+          "asset_type": "Form",
+          "asset_id": "3",
+          "asset_name": "Forms-BulkActivity",
+          "raw_data": "raw 3",
+          "campaign_id": "3",
+          "external_id": "3"
+        }
+      ]
+    },
+    "headers": {
+      "Content-Type": "application/json"
+    }
+  }
+}

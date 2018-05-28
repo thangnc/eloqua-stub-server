@@ -1,0 +1,65 @@
+{
+  "request": {
+    "url": "/api/bulk/2.0/syncs/525512/data?limit=2&offset=2",
+    "method": "GET",
+    "basicAuthCredentials": {
+      "username": "TD\\username",
+      "password": "password"
+    }
+  },
+  "response": {
+    "status": 200,
+    "jsonBody": {
+      "Count": 2,
+      "hasMore": false,
+      "limit": 2,
+      "offset": 2,
+      "totalResults": 4,
+      "items": [
+        {
+          "activity_id": "119991",
+          "activity_type": "EmailOpen",
+          "activity_date": "2018-05-08T09:00:00Z",
+          "email_address": "c1@example.com",
+          "contact_id": "123",
+          "visitor_id": "3",
+          "ip_address": "172.0.0.0",
+          "email_recipient_id": "75139c0a-ae4d-4f7e-8c5d-46f2f2d6e4f5",
+          "asset_type": "Email",
+          "asset_name": "EmailOpen-BulkActivity",
+          "asset_id": "3",
+          "subject_line": "Hi, Hello, Hola",
+          "email_web_link": "http://email.web.link",
+          "visitor_external_id": "8c25d41f-6142-4215-8134-4cd311fe2b08",
+          "campaign_id": "3",
+          "external_id": "3",
+          "deployment_id": "123",
+          "email_send_type": "forward"
+        },
+        {
+          "activity_id": "110001",
+          "activity_type": "EmailOpen",
+          "activity_date": "2018-05-09T01:00:00Z",
+          "email_address": "d1@example.com",
+          "contact_id": "123",
+          "visitor_id": "4",
+          "ip_address": "172.0.0.0",
+          "email_recipient_id": "75139c0a-ae4d-4f7e-8c5d-46f2f2d6e4f5",
+          "asset_type": "Email",
+          "asset_name": "EmailOpen-BulkActivity",
+          "asset_id": "4",
+          "subject_line": "Hi, Hello, Hola",
+          "email_web_link": "http://email.web.link",
+          "visitor_external_id": "8c25d41f-6142-4215-8134-4cd311fe2b08",
+          "campaign_id": "4",
+          "external_id": "4",
+          "deployment_id": "123",
+          "email_send_type": "forward"
+        }
+      ]
+    },
+    "headers": {
+      "Content-Type": "application/json"
+    }
+  }
+}

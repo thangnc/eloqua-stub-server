@@ -1,0 +1,57 @@
+{
+  "request": {
+    "url": "/api/bulk/2.0/syncs/52556/data?limit=2&offset=0",
+    "method": "GET",
+    "basicAuthCredentials": {
+      "username": "TD\\username",
+      "password": "password"
+    }
+  },
+  "response": {
+    "status": 200,
+    "jsonBody": {
+      "Count": 2,
+      "hasMore": true,
+      "limit": 2,
+      "offset": 0,
+      "totalResults": 3,
+      "items": [
+        {
+          "activity_id": "997",
+          "activity_type": "Bounceback",
+          "activity_date": "2018-05-07T01:00:00Z",
+          "email_address": "allison@example.com",
+          "asset_type": "Email",
+          "asset_name": "Bounceback-BulkActivity",
+          "asset_id": "1",
+          "campaign_id": "1",
+          "external_id": "1",
+          "email_recipient_id": "75139c0a-ae4d-4f7e-8c5d-46f2f2d6e4f5",
+          "deployment_id": "123",
+          "smtp_error_code": "101",
+          "smtp_status_code": "The server is unable to connect.",
+          "smtp_message": "Try to change the server's name (maybe it was spelt incorrectly) or the connection port."
+        },
+        {
+          "activity_id": "998",
+          "activity_type": "Bounceback",
+          "activity_date": "2018-05-07T02:00:00Z",
+          "email_address": "allison@example.com",
+          "asset_type": "Email",
+          "asset_name": "Bounceback-BulkActivity",
+          "asset_id": "2",
+          "campaign_id": "2",
+          "external_id": "2",
+          "email_recipient_id": "75139c0a-ae4d-4f7e-8c5d-46f2f2d6e4f5",
+          "deployment_id": "123",
+          "smtp_error_code": "101",
+          "smtp_status_code": "The server is unable to connect.",
+          "smtp_message": "Try to change the server's name (maybe it was spelt incorrectly) or the connection port."
+        }
+      ]
+    },
+    "headers": {
+      "Content-Type": "application/json"
+    }
+  }
+}

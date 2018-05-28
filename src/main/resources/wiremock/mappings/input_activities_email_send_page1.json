@@ -1,0 +1,62 @@
+{
+  "request": {
+    "url": "/api/bulk/2.0/syncs/52552/data?limit=2&offset=0",
+    "method": "GET",
+    "basicAuthCredentials": {
+      "username": "TD\\username",
+      "password": "password"
+    }
+  },
+  "response": {
+    "status": 200,
+    "jsonBody": {
+      "Count": 2,
+      "hasMore": true,
+      "limit": 2,
+      "offset": 0,
+      "totalResults": 3,
+      "items": [
+        {
+          "activity_id": "997",
+          "activity_type": "EmailSend",
+          "activity_date": "2018-05-07T01:00:00Z",
+          "email_address": "allison@example.com",
+          "contact_id": "123",
+          "visitor_id": "1",
+          "ip_address": "172.0.0.0",
+          "email_recipient_id": "75139c0a-ae4d-4f7e-8c5d-46f2f2d6e4f5",
+          "asset_type": "Email",
+          "asset_name": "EmailSend-BulkActivity",
+          "asset_id": "1",
+          "subject_line": "Hi, Hello, Hola",
+          "email_web_link": "http://email.web.link",
+          "visitor_external_id": "8c25d41f-6142-4215-8134-4cd311fe2b08",
+          "campaign_id": "1",
+          "external_id": "1",
+          "deployment_id": "123",
+          "email_send_type": "forward"
+        },
+        {
+          "activity_id": "998",
+          "activity_type": "EmailSend",
+          "activity_date": "2018-05-07T02:00:00Z",
+          "email_address": "allison@example.com",
+          "contact_id": "123",
+          "email_recipient_id": "75139c0a-ae4d-4f7e-8c5d-46f2f2d6e4f5",
+          "asset_type": "Email",
+          "asset_name": "EmailSend-BulkActivity",
+          "asset_id": "2",
+          "subject_line": "Hi, Hello, Hola",
+          "email_web_link": "http://email.web.link",
+          "campaign_id": "2",
+          "external_id": "2",
+          "deployment_id": "123",
+          "email_send_type": "forward"
+        }
+      ]
+    },
+    "headers": {
+      "Content-Type": "application/json"
+    }
+  }
+}

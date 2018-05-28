@@ -1,0 +1,30 @@
+{
+  "request": {
+    "url": "/api/bulk/2.0/syncs",
+    "method": "POST",
+    "bodyPatterns": [
+      {
+        "equalToJson": {
+          "syncedInstanceUri": "/activities/exports/26883"
+        }
+      }
+    ],
+    "basicAuthCredentials": {
+      "username": "TD\\username",
+      "password": "password"
+    }
+  },
+  "response": {
+    "status": 200,
+    "jsonBody": {
+      "syncedInstanceUri": "/activities/exports/26883",
+      "status": "pending",
+      "createdAt": "2015-07-16T19:25:14.0808068Z",
+      "createdBy": "API.User",
+      "uri": "/syncs/52553"
+    },
+    "headers": {
+      "Content-Type": "application/json"
+    }
+  }
+}

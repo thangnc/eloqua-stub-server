@@ -1,0 +1,37 @@
+{
+  "request": {
+    "url": "/api/bulk/2.0/syncs/52554/data?limit=2&offset=2",
+    "method": "GET",
+    "basicAuthCredentials": {
+      "username": "TD\\username",
+      "password": "password"
+    }
+  },
+  "response": {
+    "status": 200,
+    "jsonBody": {
+      "Count": 1,
+      "hasMore": false,
+      "limit": 2,
+      "offset": 2,
+      "totalResults": 3,
+      "items": [
+        {
+          "activity_id": "999",
+          "activity_type": "Subscribe",
+          "asset_id": "3",
+          "activity_date": "2018-05-07T03:00:00Z",
+          "email_address": "allison@example.com",
+          "email_recipient_id": "75139c0a-ae4d-4f7e-8c5d-46f2f2d6e4f5",
+          "asset_type": "Email",
+          "asset_name": "Subscribe-BulkActivity",
+          "campaign_id": "3",
+          "external_id": "3"
+        }
+      ]
+    },
+    "headers": {
+      "Content-Type": "application/json"
+    }
+  }
+}

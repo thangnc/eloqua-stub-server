@@ -1,0 +1,74 @@
+{
+  "request": {
+    "url": "/api/bulk/2.0/activities/exports",
+    "method": "POST",
+    "bodyPatterns": [
+      {
+        "equalToJson": {
+          "name":"example",
+          "fields":{
+            "activity_id": "{{Activity.Id}}",
+            "activity_type": "{{Activity.Type}}",
+            "activity_date": "{{Activity.CreatedAt}}",
+            "email_address": "{{Activity.Field(EmailAddress)}}",
+            "contact_id": "{{Activity.Contact.Id}}",
+            "ip_address": "{{Activity.Field(IpAddress)}}",
+            "visitor_id": "{{Activity.Visitor.Id}}",
+            "email_recipient_id": "{{Activity.Field(EmailRecipientId)}}",
+            "asset_type": "{{Activity.Asset.Type}}",
+            "asset_name": "{{Activity.Asset.Name}}",
+            "asset_id": "{{Activity.Asset.Id}}",
+            "subject_line": "{{Activity.Field(SubjectLine)}}",
+            "email_web_link": "{{Activity.Field(EmailWebLink)}}",
+            "visitor_external_id": "{{Activity.Visitor.ExternalId}}",
+            "campaign_id": "{{Activity.Campaign.Id}}",
+            "external_id": "{{Activity.ExternalId}}",
+            "deployment_id": "{{Activity.Field(EmailDeploymentId)}}",
+            "email_send_type": "{{Activity.Field(EmailSendType)}}"
+          },
+          "filter":"'{{Activity.Type}}' = 'EmailOpen' AND '{{Activity.CreatedAt}}' > '2018-05-08T02:00:00Z' AND '{{Activity.CreatedAt}}' <= '2018-05-09T02:00:00Z'"
+        }
+      }
+    ],
+    "basicAuthCredentials" : {
+      "username" : "TD\\username",
+      "password" : "password"
+    }
+  },
+  "response": {
+    "status": 200,
+    "jsonBody": {
+      "name":"example",
+      "fields":{
+        "activity_id": "{{Activity.Id}}",
+        "activity_type": "{{Activity.Type}}",
+        "activity_date": "{{Activity.CreatedAt}}",
+        "email_address": "{{Activity.Field(EmailAddress)}}",
+        "contact_id": "{{Activity.Contact.Id}}",
+        "ip_address": "{{Activity.Field(IpAddress)}}",
+        "visitor_id": "{{Activity.Visitor.Id}}",
+        "email_recipient_id": "{{Activity.Field(EmailRecipientId)}}",
+        "asset_type": "{{Activity.Asset.Type}}",
+        "asset_name": "{{Activity.Asset.Name}}",
+        "asset_id": "{{Activity.Asset.Id}}",
+        "subject_line": "{{Activity.Field(SubjectLine)}}",
+        "email_web_link": "{{Activity.Field(EmailWebLink)}}",
+        "visitor_external_id": "{{Activity.Visitor.ExternalId}}",
+        "campaign_id": "{{Activity.Campaign.Id}}",
+        "external_id": "{{Activity.ExternalId}}",
+        "deployment_id": "{{Activity.Field(EmailDeploymentId)}}",
+        "email_send_type": "{{Activity.Field(EmailSendType)}}"
+      },
+      "filter":"'{{Activity.Type}}' = 'EmailOpen' AND '{{Activity.CreatedAt}}' > '2018-05-08T02:00:00Z' AND '{{Activity.CreatedAt}}' <= '2018-05-09T02:00:00Z'",
+      "dataRetentionDuration":"P7D",
+      "uri":"/activities/exports/268812",
+      "createdBy":"API.User",
+      "createdAt":"2015-07-16T19:14:13.5598178Z",
+      "updatedBy":"API.User",
+      "updatedAt":"2015-07-16T19:14:13.5598178Z"
+    },
+    "headers": {
+      "Content-Type": "application/json"
+    }
+  }
+}

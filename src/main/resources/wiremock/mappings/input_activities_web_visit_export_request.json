@@ -1,0 +1,62 @@
+{
+  "request": {
+    "url": "/api/bulk/2.0/activities/exports",
+    "method": "POST",
+    "bodyPatterns": [
+      {
+        "equalToJson": {
+          "name":"example",
+          "fields":{
+            "activity_id": "{{Activity.Id}}",
+            "activity_type": "{{Activity.Type}}",
+            "activity_date": "{{Activity.CreatedAt}}",
+            "contact_id": "{{Activity.Contact.Id}}",
+            "visitor_id": "{{Activity.Visitor.Id}}",
+            "visitor_external_id": "{{Activity.Visitor.ExternalId}}",
+            "referrer_url": "{{Activity.Field(ReferrerUrl)}}",
+            "ip_address": "{{Activity.Field(IpAddress)}}",
+            "number_of_pages": "{{Activity.Field(NumberOfPages)}}",
+            "first_page_view_url": "{{Activity.Field(FirstPageViewUrl)}}",
+            "duration": "{{Activity.Field(Duration)}}",
+            "external_id": "{{Activity.ExternalId}}"
+          },
+          "filter":"'{{Activity.Type}}' = 'WebVisit' AND '{{Activity.CreatedAt}}' > '2018-05-07T00:00:00Z' AND '{{Activity.CreatedAt}}' <= '2018-05-08T00:00:00Z'"
+        }
+      }
+    ],
+    "basicAuthCredentials" : {
+      "username" : "TD\\username",
+      "password" : "password"
+    }
+  },
+  "response": {
+    "status": 200,
+    "jsonBody": {
+      "name":"example",
+      "fields":{
+        "activity_id": "{{Activity.Id}}",
+        "activity_type": "{{Activity.Type}}",
+        "activity_date": "{{Activity.CreatedAt}}",
+        "contact_id": "{{Activity.Contact.Id}}",
+        "visitor_id": "{{Activity.Visitor.Id}}",
+        "visitor_external_id": "{{Activity.Visitor.ExternalId}}",
+        "referrer_url": "{{Activity.Field(ReferrerUrl)}}",
+        "ip_address": "{{Activity.Field(IpAddress)}}",
+        "number_of_pages": "{{Activity.Field(NumberOfPages)}}",
+        "first_page_view_url": "{{Activity.Field(FirstPageViewUrl)}}",
+        "duration": "{{Activity.Field(Duration)}}",
+        "external_id": "{{Activity.ExternalId}}"
+      },
+      "filter":"'{{Activity.Type}}' = 'WebVisit' AND '{{Activity.CreatedAt}}' > '2018-05-07T00:00:00Z' AND '{{Activity.CreatedAt}}' <= '2018-05-08T00:00:00Z'",
+      "dataRetentionDuration":"P7D",
+      "uri":"/activities/exports/26887",
+      "createdBy":"API.User",
+      "createdAt":"2015-07-16T19:14:13.5598178Z",
+      "updatedBy":"API.User",
+      "updatedAt":"2015-07-16T19:14:13.5598178Z"
+    },
+    "headers": {
+      "Content-Type": "application/json"
+    }
+  }
+}

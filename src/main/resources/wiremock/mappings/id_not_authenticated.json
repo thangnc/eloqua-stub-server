@@ -1,0 +1,19 @@
+{
+  "request": {
+    "url": "/id",
+    "method": "GET",
+    "headers" : {
+      "Authorization" : {
+        "doesNotMatch" : "Basic VERcdXNlcm5hbWU6cGFzc3dvcmQ="
+      }
+    }
+  },
+  "response": {
+    "status": 200,
+    "jsonBody": "Not authenticated."
+    ,
+    "headers": {
+      "Content-Type": "application/json"
+    }
+  }
+}

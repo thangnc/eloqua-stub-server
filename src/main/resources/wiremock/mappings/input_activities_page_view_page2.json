@@ -1,0 +1,40 @@
+{
+  "request": {
+    "url": "/api/bulk/2.0/syncs/52558/data?limit=2&offset=2",
+    "method": "GET",
+    "basicAuthCredentials": {
+      "username": "TD\\username",
+      "password": "password"
+    }
+  },
+  "response": {
+    "status": 200,
+    "jsonBody": {
+      "Count": 1,
+      "hasMore": false,
+      "limit": 2,
+      "offset": 2,
+      "totalResults": 3,
+      "items": [
+        {
+          "activity_id": "999",
+          "activity_type": "PageView",
+          "activity_date": "2018-05-07T03:00:00Z",
+          "contact_id": "123",
+          "campaign_id": "3",
+          "visitor_id": "3",
+          "visitor_external_id": "8c25d41f-6142-4215-8134-4cd311fe2b08",
+          "web_visit_id": "1",
+          "url": "http://td.com",
+          "referrer_url": "http://referrer.url",
+          "ip_address": "172.0.0.0",
+          "is_web_tracking_opted_in": "false",
+          "external_id": "3"
+        }
+      ]
+    },
+    "headers": {
+      "Content-Type": "application/json"
+    }
+  }
+}

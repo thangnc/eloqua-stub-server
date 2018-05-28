@@ -1,0 +1,25 @@
+{
+  "request": {
+    "url": "/api/bulk/2.0/syncs/52558",
+    "method": "GET",
+    "basicAuthCredentials": {
+      "username": "TD\\username",
+      "password": "password"
+    }
+  },
+  "response": {
+    "status": 200,
+    "jsonBody": {
+      "syncedInstanceUri":"/activities/exports/26888",
+      "syncStartedAt":"2015-07-16T19:25:14.3900000Z",
+      "syncEndedAt":"2015-07-16T19:25:19.9370000Z",
+      "status":"success",
+      "createdAt":"2015-07-16T19:25:13.6930000Z",
+      "createdBy":"API.User",
+      "uri":"/syncs/52558"
+    },
+    "headers": {
+      "Content-Type": "application/json"
+    }
+  }
+}

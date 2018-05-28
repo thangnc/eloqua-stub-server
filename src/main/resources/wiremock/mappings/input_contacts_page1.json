@@ -1,0 +1,51 @@
+{
+  "request": {
+    "url": "/api/bulk/2.0/syncs/52524/data?limit=2&offset=0",
+    "method": "GET",
+    "basicAuthCredentials": {
+      "username": "TD\\username",
+      "password": "password"
+    }
+  },
+  "response": {
+    "status": 200,
+    "jsonBody": {
+      "Count": 2,
+      "hasMore": true,
+      "limit": 2,
+      "offset": 0,
+      "totalResults": 3,
+      "items": [
+        {
+          "c_email_address": "marzena.stencel@gmail.com",
+          "c_first_name": "Marzena",
+          "c_last_name": "Stencel",
+          "c_company": "Apple",
+          "c_email_display_name": "Marzena Stencel",
+          "c_address1": "81 E. Augusta Ave.",
+          "c_address2": "Salinas",
+          "c_address3": "CA 93905",
+          "c_city": "San Francisco",
+          "c_state_prov": "California",
+          "c_date_modified": "2018-05-01T05:00:00Z"
+        },
+        {
+          "c_email_address": "christine.cacciacarro@oracle.com",
+          "c_first_name": "Christine",
+          "c_last_name": "Cacciacarro",
+          "c_company": "Oracle",
+          "c_email_display_name": "Christine Cacciacarro",
+          "c_address1": "833 Bridle Avenue",
+          "c_address2": "San Jose",
+          "c_address3": "CA 95111",
+          "c_city": "San Jose",
+          "c_state_prov": "California",
+          "c_date_modified": "2018-05-01T06:00:00Z"
+        }
+      ]
+    },
+    "headers": {
+      "Content-Type": "application/json"
+    }
+  }
+}

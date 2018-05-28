@@ -5,7 +5,14 @@
     "basicAuthCredentials": {
       "username": "TD\\username",
       "password": "password"
-    }
+    },
+    "bodyPatterns": [
+      {
+        "equalToJson": {
+          "syncedInstanceUri": "/contacts/imports/1183"
+        }
+      }
+    ]
   },
   "response": {
     "status": 200,

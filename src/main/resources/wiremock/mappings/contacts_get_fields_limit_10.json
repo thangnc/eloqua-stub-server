@@ -1,0 +1,157 @@
+{
+  "request": {
+    "urlPath": "/api/bulk/2.0/contacts/fields",
+    "method": "GET",
+    "basicAuthCredentials" : {
+      "username" : "TD\\username",
+      "password" : "password"
+    },
+    "queryParameters" : {
+      "limit" : {
+        "equalTo": "10"
+      }
+    }
+  },
+  "response": {
+    "status": 200,
+    "jsonBody": {
+      "items":[
+        {
+          "name":"Email Address",
+          "internalName":"C_EmailAddress",
+          "dataType":"emailAddress",
+          "hasReadOnlyConstraint":false,
+          "hasNotNullConstraint":false,
+          "hasUniquenessConstraint":true,
+          "statement":"{{Contact.Field(C_EmailAddress)}}",
+          "uri":"/contacts/fields/100001",
+          "createdAt":"1900-01-01T05:00:00.0000000Z",
+          "updatedAt":"1900-01-01T05:00:00.0000000Z"
+        },
+        {
+          "name":"First Name",
+          "internalName":"C_FirstName",
+          "dataType":"string",
+          "hasReadOnlyConstraint":false,
+          "hasNotNullConstraint":false,
+          "hasUniquenessConstraint":false,
+          "statement":"{{Contact.Field(C_FirstName)}}",
+          "uri":"/contacts/fields/100002",
+          "createdAt":"1900-01-01T05:00:00.0000000Z",
+          "updatedBy":"MgrPlatformTeamPod1",
+          "updatedAt":"2014-06-16T14:43:50.8100000Z"
+        },
+        {
+          "name":"Last Name",
+          "internalName":"C_LastName",
+          "dataType":"string",
+          "hasReadOnlyConstraint":false,
+          "hasNotNullConstraint":false,
+          "hasUniquenessConstraint":false,
+          "statement":"{{Contact.Field(C_LastName)}}",
+          "uri":"/contacts/fields/100003",
+          "createdAt":"1900-01-01T05:00:00.0000000Z",
+          "updatedBy":"MgrPlatformTeamPod1",
+          "updatedAt":"2014-06-16T14:43:50.8100000Z"
+        },
+        {
+          "name":"Company",
+          "internalName":"C_Company",
+          "dataType":"string",
+          "hasReadOnlyConstraint":false,
+          "hasNotNullConstraint":false,
+          "hasUniquenessConstraint":false,
+          "statement":"{{Contact.Field(C_Company)}}",
+          "uri":"/contacts/fields/100004",
+          "createdAt":"1900-01-01T05:00:00.0000000Z",
+          "updatedBy":"MgrPlatformTeamPod1",
+          "updatedAt":"2014-06-16T14:43:50.8030000Z"
+        },
+        {
+          "name":"Email Display Name",
+          "internalName":"C_EmailDisplayName",
+          "dataType":"string",
+          "hasReadOnlyConstraint":false,
+          "hasNotNullConstraint":false,
+          "hasUniquenessConstraint":false,
+          "statement":"{{Contact.Field(C_EmailDisplayName)}}",
+          "uri":"/contacts/fields/100005",
+          "createdAt":"1900-01-01T05:00:00.0000000Z",
+          "updatedAt":"1900-01-01T05:00:00.0000000Z"
+        },
+        {
+          "name":"Address 1",
+          "internalName":"C_Address1",
+          "dataType":"string",
+          "hasReadOnlyConstraint":false,
+          "hasNotNullConstraint":false,
+          "hasUniquenessConstraint":false,
+          "statement":"{{Contact.Field(C_Address1)}}",
+          "uri":"/contacts/fields/100006",
+          "createdAt":"1900-01-01T05:00:00.0000000Z",
+          "updatedBy":"MgrPlatformTeamPod1",
+          "updatedAt":"2014-06-16T14:43:50.7900000Z"
+        },
+        {
+          "name":"Address 2",
+          "internalName":"C_Address2",
+          "dataType":"string",
+          "hasReadOnlyConstraint":false,
+          "hasNotNullConstraint":false,
+          "hasUniquenessConstraint":false,
+          "statement":"{{Contact.Field(C_Address2)}}",
+          "uri":"/contacts/fields/100007",
+          "createdAt":"1900-01-01T05:00:00.0000000Z",
+          "updatedBy":"MgrPlatformTeamPod1",
+          "updatedAt":"2014-06-16T14:43:50.7930000Z"
+        },
+        {
+          "name":"Address 3",
+          "internalName":"C_Address3",
+          "dataType":"string",
+          "hasReadOnlyConstraint":false,
+          "hasNotNullConstraint":false,
+          "hasUniquenessConstraint":false,
+          "statement":"{{Contact.Field(C_Address3)}}",
+          "uri":"/contacts/fields/100008",
+          "createdAt":"1900-01-01T05:00:00.0000000Z",
+          "updatedAt":"1900-01-01T05:00:00.0000000Z"
+        },
+        {
+          "name":"City",
+          "internalName":"C_City",
+          "dataType":"string",
+          "hasReadOnlyConstraint":false,
+          "hasNotNullConstraint":false,
+          "hasUniquenessConstraint":false,
+          "statement":"{{Contact.Field(C_City)}}",
+          "uri":"/contacts/fields/100009",
+          "createdAt":"1900-01-01T05:00:00.0000000Z",
+          "updatedBy":"MgrPlatfoemailrmTeamPod1",
+          "updatedAt":"2014-06-16T14:43:50.8000000Z"
+        },
+        {
+          "name":"State or Province",
+          "internalName":"C_State_Prov",
+          "dataType":"string",
+          "hasReadOnlyConstraint":false,
+          "hasNotNullConstraint":false,
+          "hasUniquenessConstraint":false,
+          "statement":"{{Contact.Field(C_State_Prov)}}",
+          "uri":"/contacts/fields/100010",
+          "createdAt":"1900-01-01T05:00:00.0000000Z",
+          "updatedBy":"MgrPlatformTeamPod1",
+          "updatedAt":"2014-06-16T14:43:50.8130000Z"
+        }
+      ],
+      "totalResults":62,
+      "limit":10,
+      "offset":0,
+      "count":10,
+      "hasMore":true
+    },
+    "headers": {
+      "Content-Type": "application/json"
+    }
+  }
+}

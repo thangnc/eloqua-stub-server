@@ -1,11 +1,16 @@
 {
   "request": {
-    "url": "/api/bulk/2.0/contacts/imports/bk",
+    "url": "/api/bulk/2.0/contacts/imports",
     "method": "POST",
     "basicAuthCredentials": {
       "username": "TD\\username",
       "password": "password"
-    }
+    },
+    "bodyPattern": [
+      {
+        "equalToJson": {}
+      }
+    ]
   },
   "response": {
     "status": 200,

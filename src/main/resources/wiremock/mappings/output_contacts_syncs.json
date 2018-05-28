@@ -1,6 +1,6 @@
 {
   "request": {
-    "url": "/api/bulk/2.0/syncs/bk",
+    "url": "/api/bulk/2.0/syncs",
     "method": "POST",
     "basicAuthCredentials": {
       "username": "TD\\username",

@@ -20,7 +20,7 @@
       "Content-Type": "application/json"
     },
     "jsonBody": {
-      "syncedInstanceUri": "/contacts/imports/1182",
+      "syncedInstanceUri": "/contacts/imports/1183",
       "status": "pending",
       "createdAt": "2014-05-13T17:58:34.0176959Z",
       "createdBy": "Docs.Example",

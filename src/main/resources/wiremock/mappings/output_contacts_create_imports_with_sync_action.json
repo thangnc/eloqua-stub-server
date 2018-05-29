@@ -11,11 +11,11 @@
         "equalToJson": {
           "name": "Contact Import Example",
           "fields": {
-            "c_emailaddress": "{{Contact.Field(C_EmailAddress)}}",
+            "c_email_address": "{{Contact.Field(C_EmailAddress)}}",
             "c_first_name": "{{Contact.Field(C_FirstName)}}",
             "c_last_name": "{{Contact.Field(C_LastName)}}"
           },
-          "identifierFieldName": "c_emailaddress",
+          "identifierFieldName": "c_email_address",
           "updateRule": "ifExistingIsNull",
           "syncActions":[
             {
@@ -32,11 +32,11 @@
     "jsonBody": {
       "name": "Docs Import Example",
       "fields": {
-        "c_firstname": "{{Contact.Field(C_FirstName)}}",
-        "c_lastname": "{{Contact.Field(C_LastName)}}",
-        "c_emailaddress": "{{Contact.Field(C_EmailAddress)}}"
+        "c_email_address": "{{Contact.Field(C_EmailAddress)}}",
+        "c_first_name": "{{Contact.Field(C_FirstName)}}",
+        "c_last_name": "{{Contact.Field(C_LastName)}}"
       },
-      "identifierFieldName": "c_emailaddress",
+      "identifierFieldName": "c_email_address",
       "isSyncTriggeredOnImport": false,
       "isUpdatingMultipleMatchedRecords": false,
       "uri": "/contacts/imports/1183",

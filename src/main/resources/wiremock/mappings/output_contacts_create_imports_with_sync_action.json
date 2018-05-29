@@ -5,7 +5,27 @@
     "basicAuthCredentials": {
       "username": "TD\\username",
       "password": "password"
-    }
+    },
+    "bodyPatterns": [
+      {
+        "equalToJson": {
+          "name": "Contact Import Example",
+          "fields": {
+            "c_email_address": "{{Contact.Field(C_EmailAddress)}}",
+            "c_first_name": "{{Contact.Field(C_FirstName)}}",
+            "c_last_name": "{{Contact.Field(C_LastName)}}"
+          },
+          "identifierFieldName": "FirstName",
+          "updateRule": "ifExistingIsNull",
+          "syncActions":[
+            {
+              "action":"add",
+              "destination": "{{ContactList[54]}}"
+            }
+          ]
+        }
+      }
+    ]
   },
   "response": {
     "status": 200,
@@ -19,7 +39,7 @@
       "identifierFieldName": "c_emailaddress",
       "isSyncTriggeredOnImport": false,
       "isUpdatingMultipleMatchedRecords": false,
-      "uri": "/contacts/imports/1182",
+      "uri": "/contacts/imports/1183",
       "createdBy": "Docs.Example",
       "createdAt": "2014-05-13T14:13:30.0402961Z",
       "updatedBy": "Docs.Example",

@@ -11,7 +11,7 @@
         "equalToJson": {
           "name": "Contact Import Example",
           "fields": {
-            "c_email_address": "{{Contact.Field(C_EmailAddress)}}",
+            "c_emailaddress": "{{Contact.Field(C_EmailAddress)}}",
             "c_first_name": "{{Contact.Field(C_FirstName)}}",
             "c_last_name": "{{Contact.Field(C_LastName)}}"
           },

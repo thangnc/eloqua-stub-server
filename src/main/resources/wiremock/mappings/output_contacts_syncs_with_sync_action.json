@@ -1,6 +1,6 @@
 {
   "request": {
-    "url": "/api/bulk/2.0/syncs/bk",
+    "url": "/api/bulk/2.0/syncs",
     "method": "POST",
     "basicAuthCredentials": {
       "username": "TD\\username",
@@ -24,7 +24,7 @@
       "status": "pending",
       "createdAt": "2014-05-13T17:58:34.0176959Z",
       "createdBy": "Docs.Example",
-      "uri": "/syncs/1208"
+      "uri": "/syncs/1209"
     }
   }
 }

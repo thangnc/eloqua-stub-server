@@ -15,7 +15,7 @@
             "c_first_name": "{{Contact.Field(C_FirstName)}}",
             "c_last_name": "{{Contact.Field(C_LastName)}}"
           },
-          "identifierFieldName": "c_email_address",
+          "identifierFieldName": "c_emailaddress",
           "updateRule": "ifExistingIsNull"
         }
       }

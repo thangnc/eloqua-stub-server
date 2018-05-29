@@ -1,6 +1,6 @@
 {
   "request": {
-    "url": "api/bulk/2.0/contacts/exports",
+    "url": "/api/bulk/2.0/contacts/exports",
     "method": "POST",
     "bodyPatterns": [
       {

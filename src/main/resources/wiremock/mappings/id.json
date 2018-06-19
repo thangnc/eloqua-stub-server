@@ -26,17 +26,17 @@
         "emailAddress": "jane.smith@eloqua.com"
       },
       "urls": {
-        "base": "https://eloqua-stub-server.herokuapp.com",
+        "base": "https://eloqua-stub.herokuapp.com/",
         "apis": {
           "soap": {
-            "standard": "https://eloqua-stub-server.herokuapp.com/api/{version}/Service.svc",
-            "dataTransfer": "https://eloqua-stub-server.herokuapp.com/api/{version}/DataTransferService.svc",
-            "email": "https://eloqua-stub-server.herokuapp.com/api/{version}/EmailService.svc",
-            "externalAction": "https://eloqua-stub-server.herokuapp.com/api/{version}/ExternalActionService.svc"
+            "standard": "https://eloqua-stub.herokuapp.com//api/{version}/Service.svc",
+            "dataTransfer": "https://eloqua-stub.herokuapp.com//api/{version}/DataTransferService.svc",
+            "email": "https://eloqua-stub.herokuapp.com//api/{version}/EmailService.svc",
+            "externalAction": "https://eloqua-stub.herokuapp.com//api/{version}/ExternalActionService.svc"
           },
           "rest": {
-            "standard": "https://eloqua-stub-server.herokuapp.com/api/rest/{version}/",
-            "bulk": "https://eloqua-stub-server.herokuapp.com/api/bulk/{version}/"
+            "standard": "https://eloqua-stub.herokuapp.com//api/rest/{version}/",
+            "bulk": "https://eloqua-stub.herokuapp.com//api/bulk/{version}/"
           }
         }
       }

@@ -17,8 +17,10 @@
             "c_address3": "{{Contact.Field(C_Address3)}}",
             "c_city": "{{Contact.Field(C_City)}}",
             "c_state_prov": "{{Contact.Field(C_State_Prov)}}",
+            "c_created_at": "{{Contact.Field(C_CreatedAt)}}",
             "c_date_modified": "{{Contact.Field(C_DateModified)}}"
-          }
+          },
+          "filter": "('{{Contact.Field(C_CreatedAt)}}' > '2018-04-30T00:00:00Z' AND '{{Contact.Field(C_CreatedAt)}}' <= '2018-05-01T07:00:00Z')"
         }
       }
     ],
@@ -42,8 +44,10 @@
         "c_address3": "{{Contact.Field(C_Address3)}}",
         "c_city": "{{Contact.Field(C_City)}}",
         "c_state_prov": "{{Contact.Field(C_State_Prov)}}",
+        "c_created_at": "{{Contact.Field(C_CreatedAt)}}",
         "c_date_modified": "{{Contact.Field(C_DateModified)}}"
       },
+      "filter": "('{{Contact.Field(C_CreatedAt)}}' > '2018-04-30T00:00:00Z' AND '{{Contact.Field(C_CreatedAt)}}' <= '2018-05-01T07:00:00Z')",
       "dataRetentionDuration": "PT12H",
       "uri": "/contacts/exports/29588",
       "createdBy": "Api.User",

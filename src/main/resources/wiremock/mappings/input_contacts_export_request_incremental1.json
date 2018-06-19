@@ -17,9 +17,10 @@
             "c_address3": "{{Contact.Field(C_Address3)}}",
             "c_city": "{{Contact.Field(C_City)}}",
             "c_state_prov": "{{Contact.Field(C_State_Prov)}}",
+            "c_created_at": "{{Contact.Field(C_CreatedAt)}}",
             "c_date_modified": "{{Contact.Field(C_DateModified)}}"
           },
-          "filter" : "'{{Contact.Field(C_DateModified)}}' > '2018-05-02T08:00:00Z'"
+          "filter" : "'{{Contact.Field(C_DateModified)}}' > '2018-05-02T08:00:00Z' OR ('{{Contact.Field(C_CreatedAt)}}' > '2018-05-02T08:00:00Z' AND '{{Contact.Field(C_CreatedAt)}}' <= '2018-05-03T15:00:00Z')"
         }
       }
     ],
@@ -43,9 +44,10 @@
         "c_address3": "{{Contact.Field(C_Address3)}}",
         "c_city": "{{Contact.Field(C_City)}}",
         "c_state_prov": "{{Contact.Field(C_State_Prov)}}",
+        "c_created_at": "{{Contact.Field(C_CreatedAt)}}",
         "c_date_modified": "{{Contact.Field(C_DateModified)}}"
       },
-      "filter" : "'{{Contact.Field(C_DateModified)}}' > '2018-05-02T08:00:00Z'",
+      "filter" : "'{{Contact.Field(C_DateModified)}}' > '2018-05-02T08:00:00Z' OR ('{{Contact.Field(C_CreatedAt)}}' > '2018-05-02T08:00:00Z' AND '{{Contact.Field(C_CreatedAt)}}' <= '2018-05-03T15:00:00Z')",
       "dataRetentionDuration": "PT12H",
       "uri": "/contacts/exports/29590",
       "createdBy": "Api.User",

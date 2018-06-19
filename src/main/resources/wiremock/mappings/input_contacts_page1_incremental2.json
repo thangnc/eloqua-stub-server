@@ -1,0 +1,53 @@
+{
+  "request": {
+    "url": "/api/bulk/2.0/syncs/62526/data?limit=2&offset=0",
+    "method": "GET",
+    "basicAuthCredentials": {
+      "username": "TD\\username",
+      "password": "password"
+    }
+  },
+  "response": {
+    "status": 200,
+    "jsonBody": {
+      "Count": 2,
+      "hasMore": true,
+      "limit": 2,
+      "offset": 0,
+      "totalResults": 4,
+      "items": [
+        {
+          "c_email_address": "a12@gmail.com",
+          "c_first_name": "AF1",
+          "c_last_name": "AF1",
+          "c_company": "Apple",
+          "c_email_display_name": "AF1 AF1",
+          "c_address1": "81 E. Augusta Ave.",
+          "c_address2": "Salinas",
+          "c_address3": "CA 93905",
+          "c_city": "San Francisco",
+          "c_state_prov": "California",
+          "c_date_modified": "2018-05-03T10:00:00Z",
+          "c_created_at": "2018-05-03T10:00:00Z"
+        },
+        {
+          "c_email_address": "b1@oracle.com",
+          "c_first_name": "BF1",
+          "c_last_name": "BF1",
+          "c_company": "Oracle",
+          "c_email_display_name": "BF BF",
+          "c_address1": "833 Bridle Avenue",
+          "c_address2": "San Jose",
+          "c_address3": "CA 95111",
+          "c_city": "San Jose",
+          "c_state_prov": "California",
+          "c_date_modified": "2018-05-03T11:00:00Z",
+          "c_created_at": "2018-05-03T11:00:00Z"
+        }
+      ]
+    },
+    "headers": {
+      "Content-Type": "application/json"
+    }
+  }
+}

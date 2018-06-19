@@ -1,0 +1,62 @@
+{
+  "request": {
+    "url": "/api/bulk/2.0/contacts/exports",
+    "method": "POST",
+    "bodyPatterns": [
+      {
+        "equalToJson": {
+          "name": "example",
+          "fields": {
+            "c_email_address": "{{Contact.Field(C_EmailAddress)}}",
+            "c_first_name": "{{Contact.Field(C_FirstName)}}",
+            "c_last_name": "{{Contact.Field(C_LastName)}}",
+            "c_company": "{{Contact.Field(C_Company)}}",
+            "c_email_display_name": "{{Contact.Field(C_EmailDisplayName)}}",
+            "c_address1": "{{Contact.Field(C_Address1)}}",
+            "c_address2": "{{Contact.Field(C_Address2)}}",
+            "c_address3": "{{Contact.Field(C_Address3)}}",
+            "c_city": "{{Contact.Field(C_City)}}",
+            "c_state_prov": "{{Contact.Field(C_State_Prov)}}",
+            "c_created_at": "{{Contact.Field(C_CreatedAt)}}",
+            "c_date_modified": "{{Contact.Field(C_DateModified)}}"
+          },
+          "filter" : "'{{Contact.Field(C_DateModified)}}' > '2018-05-03T09:00:00Z' OR ('{{Contact.Field(C_CreatedAt)}}' > '2018-05-03T09:00:00Z' AND '{{Contact.Field(C_CreatedAt)}}' <= '2018-05-04T16:00:00Z')"
+        }
+      }
+    ],
+    "basicAuthCredentials": {
+      "username": "TD\\username",
+      "password": "password"
+    }
+  },
+  "response": {
+    "status": 200,
+    "jsonBody": {
+      "name": "example",
+      "fields": {
+        "c_email_address": "{{Contact.Field(C_EmailAddress)}}",
+        "c_first_name": "{{Contact.Field(C_FirstName)}}",
+        "c_last_name": "{{Contact.Field(C_LastName)}}",
+        "c_company": "{{Contact.Field(C_Company)}}",
+        "c_email_display_name": "{{Contact.Field(C_EmailDisplayName)}}",
+        "c_address1": "{{Contact.Field(C_Address1)}}",
+        "c_address2": "{{Contact.Field(C_Address2)}}",
+        "c_address3": "{{Contact.Field(C_Address3)}}",
+        "c_city": "{{Contact.Field(C_City)}}",
+        "c_state_prov": "{{Contact.Field(C_State_Prov)}}",
+        "c_created_at": "{{Contact.Field(C_CreatedAt)}}",
+        "c_date_modified": "{{Contact.Field(C_DateModified)}}"
+      },
+      "filter" : "'{{Contact.Field(C_DateModified)}}' > '2018-05-03T09:00:00Z' OR ('{{Contact.Field(C_CreatedAt)}}' > '2018-05-03T09:00:00Z' AND '{{Contact.Field(C_CreatedAt)}}' <= '2018-05-04T16:00:00Z')",
+      "dataRetentionDuration": "PT12H",
+      "uri": "/contacts/exports/39590",
+      "createdBy": "Api.User",
+      "createdAt": "2015-08-19T20:51:28.8201911Z",
+      "updatedBy": "Api.User",
+      "updatedAt": "2015-08-19T20:51:28.8201911Z"
+    },
+    "headers": {
+      "Content-Type": "application/json"
+    }
+  }
+}

@@ -27,6 +27,7 @@
           "c_address3": "CA 93905",
           "c_city": "San Francisco",
           "c_state_prov": "California",
+          "c_created_at": "2018-05-01T05:00:00Z",
           "c_date_modified": "2018-05-01T05:00:00Z"
         },
         {
@@ -40,6 +41,7 @@
           "c_address3": "CA 95111",
           "c_city": "San Jose",
           "c_state_prov": "California",
+          "c_created_at": "2018-05-01T06:00:00Z",
           "c_date_modified": "2018-05-01T06:00:00Z"
         }
       ]

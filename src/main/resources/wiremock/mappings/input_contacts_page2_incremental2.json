@@ -1,0 +1,53 @@
+{
+  "request": {
+    "url": "/api/bulk/2.0/syncs/62526/data?limit=2&offset=2",
+    "method": "GET",
+    "basicAuthCredentials": {
+      "username": "TD\\username",
+      "password": "password"
+    }
+  },
+  "response": {
+    "status": 200,
+    "jsonBody": {
+      "Count": 2,
+      "hasMore": false,
+      "limit": 2,
+      "offset": 2,
+      "totalResults": 4,
+      "items": [
+        {
+          "c_email_address": "d1@gmail.com",
+          "c_first_name": "DF1",
+          "c_last_name": "DL1",
+          "c_company": "Google",
+          "c_email_display_name": "DF DL",
+          "c_address1": "150 Main St.",
+          "c_address2": "National City",
+          "c_address3": "CA 91950",
+          "c_city": "National",
+          "c_state_prov": "California",
+          "c_date_modified": "2018-05-04T07:00:00Z",
+          "c_created_at": "2018-05-04T07:00:00Z"
+        },
+        {
+          "c_email_address": "c1@gmail.com",
+          "c_first_name": "CF1",
+          "c_last_name": "CF1",
+          "c_company": "Google",
+          "c_email_display_name": "CF1 CF1",
+          "c_address1": "150 Main St.",
+          "c_address2": "National City",
+          "c_address3": "CA 91950",
+          "c_city": "National",
+          "c_state_prov": "California",
+          "c_date_modified": "2018-05-04T09:00:00Z",
+          "c_created_at": "2018-05-04T09:00:00Z"
+        }
+      ]
+    },
+    "headers": {
+      "Content-Type": "application/json"
+    }
+  }
+}

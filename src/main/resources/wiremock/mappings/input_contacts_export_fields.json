@@ -139,6 +139,19 @@
           "updatedAt": "2014-06-16T14:43:50.8130000Z"
         },
         {
+          "name": "Created At",
+          "internalName": "C_CreatedAt",
+          "dataType": "date",
+          "hasReadOnlyConstraint": false,
+          "hasNotNullConstraint": false,
+          "hasUniquenessConstraint": false,
+          "statement": "{{Contact.Field(C_CreatedAt)}}",
+          "uri": "/contacts/fields/100010",
+          "createdAt": "1900-01-01T05:00:00.0000000Z",
+          "updatedBy": "MgrPlatformTeamPod1",
+          "updatedAt": "2014-06-16T14:43:50.8130000Z"
+        },
+        {
           "name": "Modified Date",
           "internalName": "C_DateModified",
           "dataType": "date",

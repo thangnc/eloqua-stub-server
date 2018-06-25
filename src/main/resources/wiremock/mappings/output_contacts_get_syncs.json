@@ -1,0 +1,75 @@
+{
+  "request": {
+    "urlPath": "/api/bulk/2.0/syncs",
+    "method": "GET",
+    "basicAuthCredentials": {
+      "username": "TD\\username",
+      "password": "password"
+    },
+    "queryParameters" : {
+      "limit" : {
+        "equalTo": "10"
+      }
+    }
+  },
+  "response": {
+    "status": 200,
+    "jsonBody": {
+      "count": 5,
+      "hasMore": true,
+      "items": [
+        {
+          "createdAt": "2014-06-17T19:43:41.9000000Z",
+          "createdBy": "EloquaSystem",
+          "status": "success",
+          "syncEndedAt": "2014-06-17T19:43:42.7800000Z",
+          "syncStartedAt": "2014-06-17T19:43:41.9700000Z",
+          "syncedInstanceUri": "/contacts/import/1182",
+          "uri": "/syncs/1208"
+        },
+        {
+          "createdAt": "2014-06-17T19:46:08.8370000Z",
+          "createdBy": "EloquaSystem",
+          "status": "success",
+          "syncEndedAt": "2014-06-17T19:46:10.0830000Z",
+          "syncStartedAt": "2014-06-17T19:46:09.5830000Z",
+          "syncedInstanceUri": "/contacts/import/1183",
+          "uri": "/syncs/1209"
+        },
+        {
+          "createdAt": "2014-06-17T19:49:37.9700000Z",
+          "createdBy": "EloquaSystem",
+          "status": "success",
+          "syncEndedAt": "2014-06-17T19:49:38.6770000Z",
+          "syncStartedAt": "2014-06-17T19:49:37.7900000Z",
+          "syncedInstanceUri": "/contacts/import/1184",
+          "uri": "/syncs/1210"
+        },
+        {
+          "createdAt": "2014-06-17T19:56:34.5070000Z",
+          "createdBy": "EloquaSystem",
+          "status": "success",
+          "syncEndedAt": "2014-06-17T19:56:38.5800000Z",
+          "syncStartedAt": "2014-06-17T19:56:34.7670000Z",
+          "syncedInstanceUri": "/contacts/import/1185",
+          "uri": "/syncs/1211"
+        },
+        {
+          "createdAt": "2014-06-17T21:05:28.3770000Z",
+          "createdBy": "EloquaSystem",
+          "status": "success",
+          "syncEndedAt": "2014-06-17T21:05:29.4400000Z",
+          "syncStartedAt": "2014-06-17T21:05:28.6100000Z",
+          "syncedInstanceUri": "/contacts/import/1186",
+          "uri": "/syncs/1212"
+        }
+      ],
+      "limit": 5,
+      "offset": 0,
+      "totalResults": 59927
+    },
+    "headers": {
+      "Content-Type": "application/json"
+    }
+  }
+}

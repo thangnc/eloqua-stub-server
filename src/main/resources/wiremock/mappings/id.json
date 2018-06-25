@@ -26,7 +26,7 @@
         "emailAddress": "jane.smith@eloqua.com"
       },
       "urls": {
-        "base": "https://eloqua-stub.herokuapp.com/",
+        "base": "https://eloqua-stub.herokuapp.com",
         "apis": {
           "soap": {
             "standard": "https://eloqua-stub.herokuapp.com/api/{version}/Service.svc",
